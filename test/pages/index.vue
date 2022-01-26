@@ -1,5 +1,16 @@
 <template>
   <div class="container">
+    <header>
+      <div class="header-logo">私の自己紹介</div>
+      <div class="header-list">
+        <ul>
+          <li>十Lとは</li>
+          <li>プロ入りとは</li>
+          <li>睡眠時間日記</li>
+          <li>ガソリン計算</li>
+        </ul>
+      </div>
+    </header>
     <div class="row first">
       <h1>はじめまして!<br>遠近十穿といいます．</h1>
     </div>
@@ -35,7 +46,7 @@
   </div>
   </div>
   <a href=/text>textに飛びます．</a>
-  </div>
+
   </div>
 </template>
 
@@ -55,8 +66,29 @@ export default {
   justify-content: center;
 }
 .second {
-  background: linear-gradient(#ffffff,#05FBFF );
-  height: 700px;
-
+  background: linear-gradient(#ffffff,#ffffff );
+  height: 300px;
 }
+
+.second h2{
+  padding: 20px;
+}
+
+header{
+  height: 70px;
+  background-color: #ffffff;
+}
+
+.header-logo{
+  height: 70px;
+  padding: 20px;
+  float: left;
+}
+
+.header-list li{
+  padding: 20px;
+  list-style: none;
+  float: left;
+}
+
 </style>
